@@ -21,6 +21,13 @@ map:
     dest: workbenches/odh-notebook-controller
     git.url: https://github.com/opendatahub-io/kubeflow
     git.commit: 59a52974dbadd09df9c274e858d5766d42f53d55
+  odh-data-science-pipelines-operator-controller:
+    src: config
+    dest: datasciencepipelines
+    git.url: https://github.com/opendatahub-io/data-science-pipelines-operator
+    git.commit: 2fc25bd9061b49f1af7d77d445fd7066fb244f44
+    ref_type: branch
+    branch: dchouras
   odh-kuberay-operator-controller:
     src: ray-operator/config
     dest: ray
@@ -52,9 +59,6 @@ map:
     git.url: https://github.com/opendatahub-io/feast
     git.commit: 124117138b5685c0d9aff8fc0855ce522dd10b60
 additional_meta:
-  odh-data-science-pipelines-operator-controller:
-    git.url: ''
-    vcs-ref: 5ce2472ce0adb818c6f88228508a541717e32e0f
   odh-model-controller:
     git.url: ''
     vcs-ref: c0ad4f386ab2d33c213b7b3b81e293c593b7e03f
