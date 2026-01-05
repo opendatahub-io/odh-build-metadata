@@ -9,7 +9,7 @@ relatedImages:
   value: "quay.io/opendatahub/odh-notebook-controller@sha256:5c7466962b66b2206c3efa6af2534e1470c5ad45bebf372ac23049988fa5d758"
   component: odh-notebook-controller
 - name: RELATED_IMAGE_ODH_DATA_SCIENCE_PIPELINES_OPERATOR_CONTROLLER_IMAGE
-  value: "quay.io/opendatahub/data-science-pipelines-operator@sha256:8742f05208794275148fa126ba1eba52e9f9b86a13eba255953043930314e0ab"
+  value: "quay.io/opendatahub/data-science-pipelines-operator@sha256:9256e6c4e1af91baf194482d55ca9b5bfa2801b54e2fafaca4314877f06df0b8"
   component: odh-data-science-pipelines-operator-controller
 - name: RELATED_IMAGE_ODH_MODEL_CONTROLLER_IMAGE
   value: "quay.io/opendatahub/odh-model-controller@sha256:6f53421c29d2ef4f4c75060ecd1e41cc81922e041bb2a0ae8de30fa603a251c1"
