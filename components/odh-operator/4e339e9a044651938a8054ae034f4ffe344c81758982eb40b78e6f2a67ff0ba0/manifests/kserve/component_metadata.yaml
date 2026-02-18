@@ -1,4 +1,0 @@
-releases:
-  - name: KServe
-    version: v0.15
-    repoUrl: https://github.com/kserve/kserve/

@@ -1,4 +1,0 @@
-releases:
-  - name: MLflow
-    version: v3.9.0
-    repoUrl: https://github.com/mlflow/mlflow
