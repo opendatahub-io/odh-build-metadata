@@ -1,6 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/24/"
+job_url: "/job/devops/job/early-gate-tests/7/"
+correlation_id: "model-registry-operator-81-1778565291"
+fbc_tag: "odh-stable"
 test_summary:
-  Failed: 2
-  Passed: 35
+  Failed: 1
+  Passed: 4
   Skipped: 0
-  Total: 37
+  Total: 5
