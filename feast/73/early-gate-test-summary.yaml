@@ -1,3 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/4/"
+job_url: "/job/devops/job/early-gate-tests/5/"
 correlation_id: "feast-73-1778565291"
 fbc_tag: "odh-stable"
+test_summary:
+  Failed: 1
+  Passed: 0
+  Skipped: 0
+  Total: 1
