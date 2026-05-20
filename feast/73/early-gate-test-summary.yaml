@@ -1,8 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/32/"
-correlation_id: "eg-1779274125"
+job_url: "/job/devops/job/early-gate-tests/33/"
+correlation_id: "eg-1779277486"
 fbc_tag: "odh-pr-73-feast"
 test_summary:
-  Failed: 1
-  Passed: 5
+  Failed: 0
+  Passed: 0
   Skipped: 0
-  Total: 6
+  Total: 0
