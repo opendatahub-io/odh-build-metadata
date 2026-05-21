@@ -1,8 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/34/"
-correlation_id: "eg-1779340113"
+job_url: "/job/devops/job/early-gate-tests/35/"
+correlation_id: "eg-1779362834"
 fbc_tag: "odh-pr-1505-kserve"
 test_summary:
-  Failed: 0
-  Passed: 12
+  Failed: 6
+  Passed: 6
   Skipped: 0
   Total: 12
