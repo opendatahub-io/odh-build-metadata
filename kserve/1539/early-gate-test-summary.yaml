@@ -1,0 +1,8 @@
+job_url: "/job/devops/job/early-gate-tests/51/"
+correlation_id: "eg-1779775411"
+fbc_tag: "odh-pr-1539-kserve"
+test_summary:
+  Failed: 0
+  Passed: 12
+  Skipped: 0
+  Total: 12
