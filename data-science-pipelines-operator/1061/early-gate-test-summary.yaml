@@ -1,8 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/64/"
-correlation_id: "eg-1781534376"
+job_url: "/job/devops/job/early-gate-tests/65/"
+correlation_id: "eg-1781587133"
 fbc_tag: "odh-pr-1061-data-science-pipelines-operator"
 test_summary:
-  Failed: 0
-  Passed: 11
+  Failed: 1
+  Passed: 5
   Skipped: 0
-  Total: 11
+  Total: 6
