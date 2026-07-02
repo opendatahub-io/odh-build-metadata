@@ -1,0 +1,8 @@
+job_url: "/job/devops/job/early-gate-tests/1/"
+correlation_id: "rosa-hcp-mr-test"
+fbc_tag: "2.19"
+test_summary:
+  Failed: 0
+  Passed: 0
+  Skipped: 0
+  Total: 0
