@@ -1,0 +1,54 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: maas-api-route
+spec:
+  parentRefs:
+    - name: maas-default-gateway
+      namespace: openshift-ingress
+  rules:
+    # OpenAI-compatible /v1/models endpoint at top level
+    # NOTE: Using PathPrefix /v1/models (not /v1) to exclude /v1/tenants which is internal-only
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /v1/models
+      backendRefs:
+        - name: maas-api
+          port: 8443
+          weight: 100
+    # /v1/subscriptions endpoint at top level
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /v1/subscriptions
+      backendRefs:
+        - name: maas-api
+          port: 8443
+          weight: 100
+    # /v1/api-keys endpoint at top level
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /v1/api-keys
+      backendRefs:
+        - name: maas-api
+          port: 8443
+          weight: 100
+    # IMPORTANT: /v1/tenants is NOT routed through Gateway (internal-only)
+    # It must be called via maas-api Service directly for tenant-scoped auth
+    # All other maas-api endpoints remain under /maas-api prefix
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /maas-api
+      filters:
+        - type: URLRewrite
+          urlRewrite:
+            path:
+              type: ReplacePrefixMatch
+              replacePrefixMatch: /
+      backendRefs:
+        - name: maas-api
+          port: 8443
+          weight: 100
