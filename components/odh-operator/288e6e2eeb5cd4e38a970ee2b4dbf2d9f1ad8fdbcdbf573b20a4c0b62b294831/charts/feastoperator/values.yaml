@@ -1,0 +1,32 @@
+config:
+  platform-name: OpenDataHub
+  platform-version: unknown
+fullnameOverride: ""
+image:
+  fullRef: ""
+  repository: quay.io/opendatahub/odh-feast-module-operator
+  tag: odh-stable
+imagePullSecret: ""
+leaderElect: true
+nameOverride: ""
+namespace: ""
+replicas: 1
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 10m
+    memory: 128Mi
+serviceAccount:
+  annotations: {}
+  name: ""
+# upgradeGates declares admin acknowledgment gates that block platform
+# provisioning until an administrator explicitly acknowledges them.
+# Each key follows the pattern: ack-<version>-<description>
+# Uncomment entries when a breaking change requires admin intervention.
+# upgradeGates:
+#   ack-2.21.0-feast-module-migration: >-
+#     FeastOperator has been migrated from an in-tree component to a module
+#     operator. Verify that existing FeatureStore CRs are intact before
+#     acknowledging.
