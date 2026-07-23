@@ -1,0 +1,8 @@
+job_url: "/job/devops/job/early-gate-tests/75/"
+correlation_id: "eg-1784821891"
+fbc_tag: "odh-pr-891-odh-model-controller"
+test_summary:
+  Failed: 3
+  Passed: 13
+  Skipped: 0
+  Total: 16
