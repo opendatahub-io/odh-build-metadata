@@ -1,0 +1,8 @@
+job_url: "/job/devops/job/early-gate-tests/88/"
+correlation_id: "eg-1786089025"
+fbc_tag: "odh-pr-1841-model-registry"
+test_summary:
+  Failed: 1
+  Passed: 47
+  Skipped: 0
+  Total: 48
