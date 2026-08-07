@@ -1,8 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/4/"
+job_url: "/job/devops/job/early-gate-tests/89/"
 correlation_id: "eg-1785917194"
 fbc_tag: "odh-pr-171-trustyai-service-operator"
 test_summary:
-  Failed: 2
-  Passed: 4
+  Failed: 1
+  Passed: 11
   Skipped: 0
-  Total: 6
+  Total: 12
