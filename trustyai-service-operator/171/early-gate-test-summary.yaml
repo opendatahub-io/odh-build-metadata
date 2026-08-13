@@ -1,5 +1,5 @@
-job_url: "/job/devops/job/early-gate-tests/5/"
-correlation_id: "eg-1785917194"
+job_url: "/job/devops/job/early-gate-tests/7/"
+correlation_id: "egate-123"
 fbc_tag: "odh-pr-171-trustyai-service-operator"
 test_summary:
   Failed: 1
