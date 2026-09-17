@@ -1,8 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/139/"
-correlation_id: "eg-1789621376"
+job_url: "/job/devops/job/early-gate-tests/140/"
+correlation_id: "eg-1789628062"
 fbc_tag: "odh-pr-234-trainer"
 test_summary:
   Failed: 1
-  Passed: 5
+  Passed: 13
   Skipped: 0
-  Total: 6
+  Total: 14
