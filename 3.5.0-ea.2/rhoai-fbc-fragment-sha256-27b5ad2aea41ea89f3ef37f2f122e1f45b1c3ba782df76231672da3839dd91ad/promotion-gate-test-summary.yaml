@@ -7,7 +7,8 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:27b5ad2aea41ea89f3ef37f2f12
 updateChannel: beta
 clusterName: pg-d3a2f1
 openshiftVersion: 4.20-latest
-failureReason: Operator deployment failed
+podLogArchive: ods-install/rhods-logs-2026-09-28-1830.log.gz
+failureReason: 'Can Install RHODS Operator: WHILE loop was aborted because it did not finish within the limit of 1 minute. Use the ''limit'' argument to increase or remove the limit if needed.'
 cluster-health:
   status: passed
   passed: 1
