@@ -8,6 +8,7 @@ odsBuildUrl: |-
 updateChannel: beta
 clusterName: pg-706ded
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-09-28-1600.log.gz
 cluster-health:
   status: passed
   passed: 1
