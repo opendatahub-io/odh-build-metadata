@@ -1,0 +1,116 @@
+build: '22'
+qualityGate: ''
+status: passed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/22/
+rhoaiVersion: 3.5.0-ea.2
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:27b5ad2aea41ea89f3ef37f2f122e1f45b1c3ba782df76231672da3839dd91ad
+updateChannel: beta
+clusterName: pg-d3a2f1
+openshiftVersion: 4.20-latest
+failureReason: Operator deployment failed
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: passed
+  passed: 4
+  failed: 0
+  skipped: 0
+components:
+  dashboard:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  trustyai:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
