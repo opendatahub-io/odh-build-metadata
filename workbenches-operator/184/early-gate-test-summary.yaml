@@ -1,0 +1,8 @@
+job_url: "/job/devops/job/early-gate-tests/184/"
+correlation_id: "eg-1790710205"
+fbc_tag: "odh-pr-184-workbenches-operator"
+test_summary:
+  Failed: 0
+  Passed: 23
+  Skipped: 0
+  Total: 23
