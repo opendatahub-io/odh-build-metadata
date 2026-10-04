@@ -7,6 +7,7 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:7b21009ea3d4f282c4163e26ef7
 updateChannel: stable-3.x
 clusterName: pg-064822
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-10-04-1822.log.gz
 cluster-health:
   status: passed
   passed: 1
