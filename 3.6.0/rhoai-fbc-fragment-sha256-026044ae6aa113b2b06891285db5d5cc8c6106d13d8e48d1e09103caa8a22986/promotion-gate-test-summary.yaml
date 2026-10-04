@@ -1,0 +1,117 @@
+build: '34'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/34/
+rhoaiVersion: 3.6.0
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:026044ae6aa113b2b06891285db5d5cc8c6106d13d8e48d1e09103caa8a22986
+updateChannel: stable-3.x
+clusterName: crimson-e2e
+openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-10-04-1401.log.gz
+failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 3
+  failed: 1
+  skipped: 0
+components:
+  dashboard:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  trustyai:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
