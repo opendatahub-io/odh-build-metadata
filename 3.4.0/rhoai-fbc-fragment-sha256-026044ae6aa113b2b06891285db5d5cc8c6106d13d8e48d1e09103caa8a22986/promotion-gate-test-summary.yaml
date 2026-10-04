@@ -1,0 +1,115 @@
+build: '30'
+qualityGate: ''
+status: passed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/30/
+rhoaiVersion: 3.4.0
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:026044ae6aa113b2b06891285db5d5cc8c6106d13d8e48d1e09103caa8a22986
+updateChannel: stable-3.x
+clusterName: crimson-e2e
+openshiftVersion: 4.20-latest
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: passed
+  passed: 4
+  failed: 0
+  skipped: 0
+components:
+  dashboard:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  trustyai:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
