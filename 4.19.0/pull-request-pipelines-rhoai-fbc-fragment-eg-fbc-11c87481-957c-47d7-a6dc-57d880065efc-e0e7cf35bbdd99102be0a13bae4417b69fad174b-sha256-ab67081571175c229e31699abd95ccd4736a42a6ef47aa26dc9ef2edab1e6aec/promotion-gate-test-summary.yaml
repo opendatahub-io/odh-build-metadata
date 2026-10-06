@@ -1,0 +1,118 @@
+build: '57'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/57/
+rhoaiVersion: 4.19.0
+odsBuildUrl: quay.io/rhoai/pull-request-pipelines:rhoai-fbc-fragment-eg-fbc-11c87481-957c-47d7-a6dc-57d880065efc-e0e7cf35bbdd99102be0a13bae4417b69fad174b@sha256:ab67081571175c229e31699abd95ccd4736a42a6ef47aa26dc9ef2edab1e6aec
+correlationId: crimson-e2e
+updateChannel: stable-3.x
+clusterName: crimson-e2e
+openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-10-06-1840.log.gz
+failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 0
+  failed: 1
+  skipped: 0
+components:
+  dashboard:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trustyai:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
