@@ -7,6 +7,7 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:fad8735269969501ab98cb28ae1
 updateChannel: stable-3.x
 clusterName: crimson-e2e
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-10-06-1323.log.gz
 cluster-health:
   status: passed
   passed: 1
