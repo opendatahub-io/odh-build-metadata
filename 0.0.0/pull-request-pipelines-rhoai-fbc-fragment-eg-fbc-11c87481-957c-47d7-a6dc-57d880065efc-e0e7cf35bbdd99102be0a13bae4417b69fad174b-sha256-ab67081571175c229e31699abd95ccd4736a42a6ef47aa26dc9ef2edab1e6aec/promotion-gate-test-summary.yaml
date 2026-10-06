@@ -1,0 +1,117 @@
+build: '7'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/7/
+rhoaiVersion: 0.0.0
+odsBuildUrl: quay.io/rhoai/pull-request-pipelines:rhoai-fbc-fragment-eg-fbc-11c87481-957c-47d7-a6dc-57d880065efc-e0e7cf35bbdd99102be0a13bae4417b69fad174b@sha256:ab67081571175c229e31699abd95ccd4736a42a6ef47aa26dc9ef2edab1e6aec
+updateChannel: stable-3.x
+clusterName: pg-b7
+openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-10-06-1300.log.gz
+failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 0
+  failed: 1
+  skipped: 0
+components:
+  dashboard:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  trustyai:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
