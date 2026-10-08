@@ -1,8 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/220/"
-correlation_id: "eg-1791459341"
+job_url: "/job/devops/job/early-gate-tests/222/"
+correlation_id: "eg-1791472621"
 fbc_tag: "odh-pr-910-kubeflow"
 test_summary:
-  Failed: 4
-  Passed: 19
+  Failed: 3
+  Passed: 20
   Skipped: 0
   Total: 23
