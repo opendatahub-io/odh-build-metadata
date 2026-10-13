@@ -1,0 +1,27 @@
+{{- include "grid-operator.normalize" . }}
+{{- if .Values.rbac.create }}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: {{ include "grid-operator.fullname" . }}-crd
+  labels:
+    {{- include "grid-operator.labels" . | nindent 4 }}
+rules:
+  - apiGroups: ["grid.praxis.fast"]
+    resources:
+      - agenttoolproviders
+      - gridnetworks
+      - inferenceproviders
+    verbs: ["get", "list", "watch", "patch"]
+  - apiGroups: ["grid.praxis.fast"]
+    resources:
+      - gridsites
+    verbs: ["get", "list", "watch", "patch", "create", "update", "delete"]
+  - apiGroups: ["grid.praxis.fast"]
+    resources:
+      - agenttoolproviders/status
+      - gridnetworks/status
+      - gridsites/status
+      - inferenceproviders/status
+    verbs: ["get", "patch"]
+{{- end }}
