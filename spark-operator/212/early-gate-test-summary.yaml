@@ -1,8 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/317/"
-correlation_id: "eg-1792673191"
+job_url: "/job/devops/job/early-gate-tests/319/"
+correlation_id: "eg-1792685190"
 fbc_tag: "odh-pr-212-spark-operator"
 test_summary:
-  Failed: 1
-  Passed: 11
-  Skipped: 0
-  Total: 12
+  Failed: 0
+  Passed: 30
+  Skipped: 2
+  Total: 32
