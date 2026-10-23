@@ -1,8 +1,8 @@
-job_url: "/job/devops/job/early-gate-tests/310/"
-correlation_id: "eg-1792612810"
+job_url: "/job/devops/job/early-gate-tests/329/"
+correlation_id: "eg-1792762904"
 fbc_tag: "odh-pr-288-workbenches-operator"
 test_summary:
-  Failed: 3
-  Passed: 20
+  Failed: 2
+  Passed: 1
   Skipped: 0
-  Total: 23
+  Total: 3
