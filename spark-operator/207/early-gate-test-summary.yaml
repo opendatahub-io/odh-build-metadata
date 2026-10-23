@@ -1,0 +1,8 @@
+job_url: "/job/devops/job/early-gate-tests/328/"
+correlation_id: "eg-1792761869"
+fbc_tag: "odh-pr-207-spark-operator"
+test_summary:
+  Failed: 2
+  Passed: 1
+  Skipped: 0
+  Total: 3
