@@ -1,0 +1,70 @@
+nameOverride: ""
+fullnameOverride: ""
+
+operatorNamespace: opendatahub-operator-system
+
+# Namespace of the OpenTelemetry Operator's active Collector admission webhook.
+# The parent operator discovers and sets it. Standalone installs must set it
+# explicitly to grant the operator cert-manager access for TargetAllocator mTLS.
+otelOperatorNamespace: ""
+
+# Namespace where Monitoring operands (Tempo, collector) are deployed.
+# Tempo write ACL treats this namespace name as the RBAC resource.
+# Defaults to operatorNamespace when empty. On RHOAI this is
+# spec.monitoring.namespace (e.g. redhat-ods-monitoring).
+monitoringNamespace: ""
+
+# Namespace containing the external router or gateway that reaches the
+# monitoring proxies. Empty retains the OpenShift ingress policy-group
+# selector, while deployment overlays may provide a namespace-specific source.
+gatewayNamespace: ""
+
+image:
+  repository: quay.io/opendatahub/odh-observability
+  tag: odh-stable
+  pullPolicy: Always
+
+replicaCount: 1
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+# Leader election - enable when running multiple replicas.
+leaderElect: false
+
+# Webhook admission policy configuration.
+# failurePolicy controls what happens when the webhook is unavailable.
+# Use Ignore (default) for single-replica deployments to avoid blocking
+# PodMonitor/ServiceMonitor admission during operator restarts or node drains.
+# Switch to Fail only after enabling HA (replicaCount >= 2, leaderElect: true).
+webhook:
+  failurePolicy: Ignore
+  # The admission probe periodically writes a canary PodMonitor and checks that
+  # the webhook labels it. The canary lives in a dedicated namespace labeled
+  # monitoring.opendatahub.io/scrape=true, so the webhook namespaceSelector
+  # matches it without opting any real monitors into scraping.
+  probe:
+    # Defaults to <fullname>-webhook-probe when empty.
+    namespace: ""
+    # Set to false when the namespace is provisioned outside this chart. It must
+    # then carry the monitoring.opendatahub.io/scrape=true label.
+    createNamespace: true
+
+# Image pull secrets for private registries.
+imagePullSecrets: []
+
+# Node selector, tolerations, and affinity for the controller pod.
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
+# Extra environment variables injected into the controller container.
+# Use for RELATED_IMAGE_* overrides.
+env: []
+# - name: RELATED_IMAGE_PERSES_IMAGE
+#   value: "registry.redhat.io/cluster-observability-operator/perses-rhel9:1.5.0-1781116652"
