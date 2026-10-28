@@ -1,0 +1,513 @@
+map:
+  odh-workbenches-operator:
+    src: charts/operator
+    dest: workbenches
+    type: chart
+    git.url: https://github.com/opendatahub-io/workbenches-operator
+    git.commit: e6f1b5d0a5a8b52ea83a665e19f9bc63077b523c
+  odh-kserve-module-operator:
+    src: kserve-module/config
+    dest: kserve-module-operator
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: e7ce1cd1c4ac637e3c1a7ce080f6326cc45ae2f7
+  odh-data-science-pipelines-operator-controller:
+    src: config
+    dest: datasciencepipelines
+    git.url: https://github.com/opendatahub-io/data-science-pipelines-operator
+    git.commit: 6a2976a6d73f1cc10993cdf2b626ac96d6e9b059
+  odh-ray-module-operator:
+    src: config
+    dest: ray
+    git.url: https://github.com/opendatahub-io/ray-module-operator
+    git.commit: 9b7751e4118c940b8ae9526c97dba1a85b1b82d9
+  odh-trustyai-module-operator:
+    src: trustyai-operator-module/config
+    dest: trustyai
+    git.url: https://github.com/opendatahub-io/trustyai-service-operator
+    git.commit: f5dfbc548b17a4a0c6436653eb96becc12977a09
+  odh-model-registry-operator:
+    src: config
+    dest: aihub
+    git.url: https://github.com/opendatahub-io/model-registry-operator
+    git.commit: e9a531232abfa5da3a69471701b8c8e34688f6ce
+  odh-dashboard-operator:
+    src: dashboard-operator/charts/dashboard
+    dest: dashboard-operator
+    type: chart
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 27efc6479a9cc1b503f7afa25905620933c338bc
+  odh-trainer-operator:
+    src: config
+    dest: trainer
+    git.url: https://github.com/opendatahub-io/trainer-operator
+    git.commit: 7f82c5180817965f0266124dd886452985809f4a
+  odh-mlflow-operator:
+    src: config
+    dest: mlflowoperator
+    git.url: https://github.com/opendatahub-io/mlflow-operator
+    git.commit: 8ca494fb673d6c974a4ba7c567e7e4ef3c3572f3
+  odh-spark-operator-module:
+    src: spark-operator-module/config
+    dest: sparkoperator
+    git.url: https://github.com/opendatahub-io/spark-operator
+    git.commit: 4175c333a0c0bc7e2b498185276256936f22dfd5
+  odh-ai-gateway-operator:
+    src: config
+    dest: aigateway
+    git.url: https://github.com/opendatahub-io/ai-gateway-operator
+    git.commit: c7de8b6257b87a07950e821ef57f9749896c0922
+  odh-mcp-lifecycle-module-operator:
+    src: config
+    dest: mcplifecycleoperator
+    git.url: https://github.com/opendatahub-io/mcp-lifecycle-module-operator
+    git.commit: 8d28cc356ef889024ab4fd551c8a7946bfc90305
+  odh-feast-module-operator:
+    src: config/chart
+    dest: data
+    type: chart
+    git.url: https://github.com/opendatahub-io/feast-module-operator
+    git.commit: 5982ded26abe5445f778d3d78bbb360432c9acf2
+  odh-ogx-module-operator:
+    src: ogx-module/config
+    dest: ogx
+    git.url: https://github.com/opendatahub-io/ogx-k8s-operator
+    git.commit: 7a296dad95acbbcb7ec1f3e58d09df26ce389b20
+  odh-observability:
+    src: charts/odh-observability
+    dest: odh-observability
+    type: chart
+    git.url: https://github.com/opendatahub-io/odh-observability
+    git.commit: 53500a65e8ccb822042596a2b80ab312f9a5e68c
+  odh-db-operator:
+    src: config/chart
+    dest: databaseservice
+    type: chart
+    git.url: https://github.com/opendatahub-io/opendatahub-db-operator
+    git.commit: 0d573f0e8496df9629da41190cc0309575aba91b
+additional_meta:
+  odh-kf-notebook-controller:
+    git.url: https://github.com/opendatahub-io/kubeflow
+    git.commit: b3157f9e32a194e253f00e3d75225db711b828a1
+  odh-dashboard:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 5635c3f2fba92b9926ed7b83ee2732aad80c6b77
+  odh-notebook-controller:
+    git.url: https://github.com/opendatahub-io/kubeflow
+    git.commit: b3157f9e32a194e253f00e3d75225db711b828a1
+  odh-model-controller:
+    git.url: https://github.com/opendatahub-io/odh-model-controller
+    git.commit: c75042ed4c042e718dc32c9a8ba1cc9dae84a8dd
+  odh-trustyai-service:
+    git.url: https://github.com/opendatahub-io/trustyai-service
+    git.commit: 9d89deb2479bc79fcc3668edc2f6d34b083d2e90
+  odh-trustyai-service-operator:
+    git.url: https://github.com/opendatahub-io/trustyai-service-operator
+    git.commit: f761946ecdfa94a24b66a1464cb00552ae345bad
+  odh-kuberay-operator-controller:
+    git.url: https://github.com/opendatahub-io/kuberay
+    git.commit: 033f7d53a5178ccf8e902b9b226432ee5eaa282f
+  odh-mlmd-grpc-server:
+    git.url: https://github.com/opendatahub-io/ml-metadata
+    git.commit: eb040755426afeb3d3a3f4cc427fd059d79631aa
+  odh-ml-pipelines-api-server-v2:
+    git.url: https://github.com/opendatahub-io/data-science-pipelines
+    git.commit: 4df0526318dae0ff232bed0a61ffd4445cc815a2
+  odh-ml-pipelines-persistenceagent-v2:
+    git.url: https://github.com/opendatahub-io/data-science-pipelines
+    git.commit: 4df0526318dae0ff232bed0a61ffd4445cc815a2
+  odh-ml-pipelines-scheduledworkflow-v2:
+    git.url: https://github.com/opendatahub-io/data-science-pipelines
+    git.commit: 4df0526318dae0ff232bed0a61ffd4445cc815a2
+  odh-ml-pipelines-driver:
+    git.url: https://github.com/opendatahub-io/data-science-pipelines
+    git.commit: 4df0526318dae0ff232bed0a61ffd4445cc815a2
+  odh-ml-pipelines-launcher:
+    git.url: https://github.com/opendatahub-io/data-science-pipelines
+    git.commit: 4df0526318dae0ff232bed0a61ffd4445cc815a2
+  odh-data-science-pipelines-argo-argoexec:
+    git.url: https://github.com/opendatahub-io/argo-workflows
+    git.commit: 985dffadfca7f972966e9f2acdf93348afe8e8e8
+  odh-data-science-pipelines-argo-workflowcontroller:
+    git.url: https://github.com/opendatahub-io/argo-workflows
+    git.commit: 985dffadfca7f972966e9f2acdf93348afe8e8e8
+  odh-model-registry:
+    git.url: https://github.com/opendatahub-io/model-registry
+    git.commit: 884af899e6178efca4caed88feef817cbe9fa90b
+  odh-training-operator:
+    git.url: https://github.com/opendatahub-io/training-operator
+    git.commit: f6c57e481ca17a27bca4d4324240fcd245770287
+  odh-feast-operator:
+    git.url: https://github.com/opendatahub-io/feast
+    git.commit: 95b331c5b3eceb771f08572192ac92dadc5b0ba6
+  odh-feature-server:
+    git.url: https://github.com/opendatahub-io/feast
+    git.commit: 95b331c5b3eceb771f08572192ac92dadc5b0ba6
+  odh-kserve-agent:
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: e7ce1cd1c4ac637e3c1a7ce080f6326cc45ae2f7
+  odh-kserve-controller:
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: e7ce1cd1c4ac637e3c1a7ce080f6326cc45ae2f7
+  odh-kserve-router:
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: e7ce1cd1c4ac637e3c1a7ce080f6326cc45ae2f7
+  odh-kserve-storage-initializer:
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: e7ce1cd1c4ac637e3c1a7ce080f6326cc45ae2f7
+  odh-ta-lmes-driver:
+    git.url: https://github.com/opendatahub-io/trustyai-service-operator
+    git.commit: f761946ecdfa94a24b66a1464cb00552ae345bad
+  odh-ta-lmes-job:
+    git.url: https://github.com/opendatahub-io/lm-evaluation-harness
+    git.commit: 4588103b8b8ee3855db07d0705ebd0d2e42f8d7b
+  odh-fms-guardrails-orchestrator:
+    git.url: https://github.com/opendatahub-io/fms-guardrails-orchestrator
+    git.commit: 8b73e23fd634e6bf809875aaa0fb8e7527e1df10
+  odh-trustyai-vllm-orchestrator-gateway:
+    git.url: https://github.com/opendatahub-io/vllm-orchestrator-gateway
+    git.commit: 1cb2d2ca4430f804fc5e4cc4f497913ebdf9af90
+  odh-built-in-detector:
+    git.url: https://github.com/opendatahub-io/guardrails-detectors
+    git.commit: bead2b80da25364f7396920eca881c1e8941be93
+  odh-pipeline-runtime-datascience-cpu-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 98855910f8ab180f2558a444e3b5d4ece9c05047
+  odh-pipeline-runtime-minimal-cpu-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 98855910f8ab180f2558a444e3b5d4ece9c05047
+  odh-pipeline-runtime-pytorch-cuda-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 7b87e8f1c76ea299aa66a3e72a42a5c108666b1e
+  odh-pipeline-runtime-pytorch-rocm-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 7b87e8f1c76ea299aa66a3e72a42a5c108666b1e
+  odh-pipeline-runtime-tensorflow-cuda-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 7b87e8f1c76ea299aa66a3e72a42a5c108666b1e
+  odh-pipeline-runtime-tensorflow-rocm-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 378d4998c7187f658bd947cf94af60ba769222dc
+  odh-workbench-codeserver-datascience-cpu-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 378d4998c7187f658bd947cf94af60ba769222dc
+  odh-workbench-jupyter-datascience-cpu-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 98855910f8ab180f2558a444e3b5d4ece9c05047
+  odh-workbench-jupyter-minimal-cpu-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 98855910f8ab180f2558a444e3b5d4ece9c05047
+  odh-workbench-jupyter-minimal-cuda-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 98855910f8ab180f2558a444e3b5d4ece9c05047
+  odh-workbench-jupyter-minimal-rocm-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 7b87e8f1c76ea299aa66a3e72a42a5c108666b1e
+  odh-workbench-jupyter-pytorch-cuda-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 7b87e8f1c76ea299aa66a3e72a42a5c108666b1e
+  odh-workbench-jupyter-pytorch-rocm-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 378d4998c7187f658bd947cf94af60ba769222dc
+  odh-workbench-jupyter-tensorflow-cuda-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 7b87e8f1c76ea299aa66a3e72a42a5c108666b1e
+  odh-workbench-jupyter-tensorflow-rocm-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 378d4998c7187f658bd947cf94af60ba769222dc
+  odh-workbench-jupyter-trustyai-cpu-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 98855910f8ab180f2558a444e3b5d4ece9c05047
+  odh-guardrails-detector-huggingface-runtime:
+    git.url: https://github.com/opendatahub-io/guardrails-detectors
+    git.commit: bead2b80da25364f7396920eca881c1e8941be93
+  odh-openvino-model-server:
+    git.url: https://github.com/opendatahub-io/openvino_model_server
+    git.commit: 212007dfcf32b713fd9380373ea40afe969f7d42
+  odh-model-registry-job-async-upload:
+    git.url: https://github.com/opendatahub-io/model-registry
+    git.commit: 884af899e6178efca4caed88feef817cbe9fa90b
+  odh-workbench-jupyter-pytorch-llmcompressor-cuda-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 378d4998c7187f658bd947cf94af60ba769222dc
+  odh-pipeline-runtime-pytorch-llmcompressor-cuda-py312:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 378d4998c7187f658bd947cf94af60ba769222dc
+  odh-model-metadata-collection:
+    git.url: https://github.com/opendatahub-io/model-metadata-collection
+    git.commit: 1db63b1d9397a110c38f8ab952f9a0c8bfd2b400
+  odh-mod-arch-gen-ai:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 87157d2e25a7147f79ab1bd60906d9f0addac9b4
+  odh-kube-auth-proxy:
+    git.url: https://github.com/opendatahub-io/kube-auth-proxy
+    git.commit: b2d77d885fbc1df2cdf3c29f4722156a9e03c8ad
+  odh-maas-api:
+    git.url: https://github.com/opendatahub-io/models-as-a-service
+    git.commit: 761884ed5a5d8939ca23a84d144821e9615d7115
+  odh-trustyai-ragas-lls-provider-dsp:
+    git.url: https://github.com/opendatahub-io/llama-stack-provider-ragas
+    git.commit: c965f047397ced2ea698f4680b1a79d1b476911c
+  odh-training-cuda121-torch24-py311:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: a8c4b13aaa2189b0cbfcc3fb990459b3ccb7329f
+  odh-training-cuda124-torch25-py311:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: a8c4b13aaa2189b0cbfcc3fb990459b3ccb7329f
+  odh-training-cuda128-torch28-py312:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: b9fa0ea5e4397eb77cc92b2c92c34aea4165ff7d
+  odh-training-rocm62-torch24-py311:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: 3c830ef676a67d907251eb7b240c6e73d5b8dc2d
+  odh-training-rocm62-torch25-py311:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: a6566cd84c46a6a1904db901cbe32b70a72e8cd2
+  odh-training-rocm64-torch28-py312:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: 2626e9b1807841740176d2a24100f4587f57913f
+  odh-mod-arch-model-registry:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: d64a4cd308db77096a170c7e1add7ea9af133fc1
+  odh-trainer:
+    git.url: https://github.com/opendatahub-io/trainer
+    git.commit: 40110706662cdad9e1764db938b3479559908c65
+  odh-mlserver:
+    git.url: https://github.com/opendatahub-io/MLServer
+    git.commit: 22e8613b18339721258db92450c2e9e74e9e8469
+  odh-mlflow:
+    git.url: https://github.com/opendatahub-io/mlflow
+    git.commit: c1c17851113c28e2f55995eb5e2631d59cd6e215
+  odh-training-rocm64-torch29-py312:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: 57f954a78602b59b8b81dd85537df2c1d484c05d
+  odh-training-cuda128-torch29-py312:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: 10d40f1221befa4b6f6fb51e6ecad8dbd128f70a
+  odh-mod-arch-maas:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 8ca21c4a4448a632f73fd0f22e6a0995f4e29856
+  odh-spark-operator:
+    git.url: https://github.com/opendatahub-io/spark-operator
+    git.commit: 4175c333a0c0bc7e2b498185276256936f22dfd5
+  odh-mod-arch-mlflow:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 28cb43ce4f1511fef774950d4bc5b1a558eaa5b3
+  odh-mod-arch-eval-hub:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: a9ee0e6b12672bae55c92a5a1263444eceff129a
+  odh-mod-arch-autorag:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 5df62235a21d71fc7c16e8e3301bcca9b0d4269a
+  odh-mod-arch-automl:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: dd85596077d3dd6cbd92d466316d020bd7051fd2
+  odh-maas-controller:
+    git.url: https://github.com/opendatahub-io/models-as-a-service
+    git.commit: 761884ed5a5d8939ca23a84d144821e9615d7115
+  odh-autorag:
+    git.url: https://github.com/opendatahub-io/pipelines-components
+    git.commit: 375957c5bd2fcdfde9ff3a1274b345f87cdab150
+  odh-automl:
+    git.url: https://github.com/opendatahub-io/pipelines-components
+    git.commit: 2254863703fa5099ef207efecc87ec3fc845988a
+  odh-ai-gateway-payload-processing:
+    git.url: https://github.com/opendatahub-io/ai-gateway-payload-processing
+    git.commit: a6fa044edac1c25c44c95a06fc395ab8a9d8e1ff
+  odh-pipelines-components:
+    git.url: https://github.com/opendatahub-io/pipelines-components
+    git.commit: 375957c5bd2fcdfde9ff3a1274b345f87cdab150
+  odh-model-serving-api:
+    git.url: https://github.com/opendatahub-io/odh-model-controller
+    git.commit: c75042ed4c042e718dc32c9a8ba1cc9dae84a8dd
+  odh-kserve-autogluon-server:
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: e7ce1cd1c4ac637e3c1a7ce080f6326cc45ae2f7
+  odh-kserve-llmisvc-controller:
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: e7ce1cd1c4ac637e3c1a7ce080f6326cc45ae2f7
+  odh-rhaii-cluster-validator:
+    git.url: https://github.com/opendatahub-io/rhaii-cluster-validation
+    git.commit: 6cb210435668bf9a225057378f7789df133baa3f
+  odh-rhaii-validator-tools:
+    git.url: https://github.com/opendatahub-io/rhaii-cluster-validation
+    git.commit: f117f03cfed56fde98dd27577eca83b00feb3893
+  odh-llm-d-batch-gateway-apiserver:
+    git.url: https://github.com/opendatahub-io/batch-gateway
+    git.commit: d22ec54ce4f99a38deb49cdf84c7804b3e903247
+  odh-llm-d-batch-gateway-processor:
+    git.url: https://github.com/opendatahub-io/batch-gateway
+    git.commit: d22ec54ce4f99a38deb49cdf84c7804b3e903247
+  odh-llm-d-batch-gateway-gc:
+    git.url: https://github.com/opendatahub-io/batch-gateway
+    git.commit: a8dbc5f544df8a6c8c1ec0872ab0117a1365c61d
+  odh-kserve-localmodelnode-agent:
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: e7ce1cd1c4ac637e3c1a7ce080f6326cc45ae2f7
+  odh-kserve-localmodel-controller:
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: e7ce1cd1c4ac637e3c1a7ce080f6326cc45ae2f7
+  odh-kube-rbac-proxy:
+    git.url: https://github.com/opendatahub-io/kube-rbac-proxy
+    git.commit: bb65950b20d5f14f641d19a4568604cd298f88dc
+  odh-ai-gateway-payload-processing-e2e:
+    git.url: https://github.com/opendatahub-io/ai-gateway-payload-processing
+    git.commit: a6fa044edac1c25c44c95a06fc395ab8a9d8e1ff
+  odh-eval-hub:
+    git.url: https://github.com/opendatahub-io/eval-hub
+    git.commit: 713572418940cea4881cfb20e903c3b4e14d9fea
+  odh-trustyai-nemo-guardrails-serve:
+    git.url: https://github.com/opendatahub-io/NeMo-Guardrails
+    git.commit: 5b40ea844b6269fa3a889921cefe75860a108a81
+  odh-trustyai-garak-lls-provider-dsp:
+    git.url: https://github.com/opendatahub-io/llama-stack-provider-trustyai-garak
+    git.commit: 933ce01999f0fd3d37153007a399762558c38562
+  odh-ogx-k8s-operator:
+    git.url: https://github.com/opendatahub-io/ogx-k8s-operator
+    git.commit: 7a296dad95acbbcb7ec1f3e58d09df26ce389b20
+  odh-ogx-core:
+    git.url: https://github.com/opendatahub-io/ogx-distribution
+    git.commit: 687b0fa092e44fabe53e62e0d55ca6b955225fd1
+  odh-agents-operator:
+    git.url: https://github.com/opendatahub-io/agents-operator
+    git.commit: f3227ee249b7edb9cd6988b4514e0b265e7174b0
+  odh-mod-arch-agent-ops:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 7b4db7252e9a01f91e91986d8c2a2eb9b7b5b86f
+  odh-batch-gateway-operator:
+    git.url: https://github.com/opendatahub-io/llm-d-batch-gateway-operator
+    git.commit: a70baa9565898c65412389f1cf2a543a197e5ce8
+  odh-llm-d-async:
+    git.url: https://github.com/opendatahub-io/llm-d-async
+    git.commit: 3e719e409b9f123bde9de0e1abf1777a8a298686
+  odh-llm-d-router-disagg-sidecar:
+    git.url: https://github.com/opendatahub-io/llm-d-router
+    git.commit: a339342fd4304aba3e0dc4b8dd7c2318f4ee06df
+  odh-authbridge-proxy:
+    git.url: https://github.com/opendatahub-io/agents-operator
+    git.commit: f3227ee249b7edb9cd6988b4514e0b265e7174b0
+  odh-workbenches-controller:
+    git.url: https://github.com/opendatahub-io/workbenches
+    git.commit: 0ec0f512b84dc6b4ab0fe105a01029aef2ad4309
+  odh-llm-d-router-endpoint-picker:
+    git.url: https://github.com/opendatahub-io/llm-d-router
+    git.commit: a339342fd4304aba3e0dc4b8dd7c2318f4ee06df
+  odh-mcp-lifecycle-operator:
+    git.url: https://github.com/opendatahub-io/mcp-lifecycle-operator
+    git.commit: 638cce31a30c5937a1d8b36f6a4cd38358ead793
+  odh-rhoai-mcp:
+    git.url: https://github.com/opendatahub-io/rhoai-mcp
+    git.commit: 45294339c5a7ebc13ab83968ee796f8c7eb63b06
+  odh-core-bff:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 27efc6479a9cc1b503f7afa25905620933c338bc
+  odh-mlserver-cuda:
+    git.url: https://github.com/opendatahub-io/MLServer
+    git.commit: 22e8613b18339721258db92450c2e9e74e9e8469
+  odh-mcp-lifecycle-operator-e2e:
+    git.url: https://github.com/opendatahub-io/mcp-lifecycle-operator
+    git.commit: 638cce31a30c5937a1d8b36f6a4cd38358ead793
+  odh-th-torch-cpu-py312:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: 14b124c8d9fc5ebd3cbc7f28a8270106ba2a3028
+  odh-th-torch-cuda-py312:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: 6ff341fca2fd1ba0c11dfa0baf55d86d304b8fe2
+  odh-th-torch-rocm-py312:
+    git.url: https://github.com/opendatahub-io/distributed-workloads
+    git.commit: 2d4f4b52fc02681844c73dd9de5ffd7c8b21161c
+  odh-trustyai-service-py:
+    git.url: https://github.com/opendatahub-io/trustyai-service
+    git.commit: fcef8ad5cc5a6163d9b75ccb85665404ed4dc8f7
+  odh-data-connect-hub-flight:
+    git.url: https://github.com/opendatahub-io/data-connect-hub
+    git.commit: 94b772f4be6c5e1179631503a678a038da10863d
+  odh-data-connect-hub-rest:
+    git.url: https://github.com/opendatahub-io/data-connect-hub
+    git.commit: 94b772f4be6c5e1179631503a678a038da10863d
+  odh-openshell-cli:
+    git.url: https://github.com/opendatahub-io/openshell
+    git.commit: af1ddd9a2c36e91691ddd9f33b4c8bbe853752cd
+  odh-data-connect-hub-controller:
+    git.url: https://github.com/opendatahub-io/data-connect-hub
+    git.commit: 94b772f4be6c5e1179631503a678a038da10863d
+  odh-praxis-extproc:
+    git.url: https://github.com/opendatahub-io/praxis-extproc
+    git.commit: 46569788aedec0992ce5cf1ceb585ce6cee352c9
+  odh-mod-arch-notebooks:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 5635c3f2fba92b9926ed7b83ee2732aad80c6b77
+  odh-pipeline-runtime-baseline-cpu-py312-c9s:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 7b87e8f1c76ea299aa66a3e72a42a5c108666b1e
+  odh-modelexpress-operator:
+    git.url: https://github.com/opendatahub-io/modelexpress
+    git.commit: 0daf735ddbe27ee936596012b843442f1eff01ea
+  odh-modelexpress:
+    git.url: https://github.com/opendatahub-io/modelexpress
+    git.commit: 0daf735ddbe27ee936596012b843442f1eff01ea
+  odh-ai-gateway-controller:
+    git.url: https://github.com/opendatahub-io/ai-gateway-controller
+    git.commit: ecda771a9a231002b13176058a81ad820eb2c2b4
+  odh-eval-hub-inspectai:
+    git.url: https://github.com/opendatahub-io/eval-hub-contrib
+    git.commit: f7749f6f42e4d1aade9188c8bfea8da69901fba1
+  odh-mod-arch-data-registry:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 27efc6479a9cc1b503f7afa25905620933c338bc
+  odh-autorag-inference:
+    git.url: https://github.com/opendatahub-io/pipelines-components
+    git.commit: 4502e0626929e3e9d7631b905e3335782d8656a0
+  odh-mod-arch-data-connect-hub:
+    git.url: https://github.com/opendatahub-io/odh-dashboard
+    git.commit: 1c41da31be541a397a7e7e1b7131cb37967fb3f3
+  odh-llm-d-coordinator:
+    git.url: https://github.com/opendatahub-io/llm-d-router
+    git.commit: a339342fd4304aba3e0dc4b8dd7c2318f4ee06df
+  odh-eval-hub-lighteval:
+    git.url: https://github.com/opendatahub-io/eval-hub-contrib
+    git.commit: f7749f6f42e4d1aade9188c8bfea8da69901fba1
+  odh-praxis-ai-grid-operator:
+    git.url: https://github.com/opendatahub-io/praxis-ai-grid-operator
+    git.commit: fff13580530a32fb9bf5569509f24d105902a20e
+  odh-openshell-sandbox:
+    git.url: https://github.com/opendatahub-io/openshell
+    git.commit: af1ddd9a2c36e91691ddd9f33b4c8bbe853752cd
+  odh-praxis-grid-gateway:
+    git.url: https://github.com/opendatahub-io/praxis-ai-grid-operator
+    git.commit: fff13580530a32fb9bf5569509f24d105902a20e
+  odh-praxis-grid-enrollment:
+    git.url: https://github.com/opendatahub-io/praxis-ai-grid-operator
+    git.commit: 80c22800cd59ab2bb8ce78dd878ae07d259d23ad
+  odh-maas-discovery:
+    git.url: https://github.com/opendatahub-io/models-as-a-service
+    git.commit: 761884ed5a5d8939ca23a84d144821e9615d7115
+  odh-workbench-jupyter-baseline-cpu-py312-c9s:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 7b87e8f1c76ea299aa66a3e72a42a5c108666b1e
+  odh-workbench-codeserver-baseline-cpu-py312-c9s:
+    git.url: ''
+    git.commit: ''
+  odh-openshell-sandbox-openclaw:
+    git.url: https://github.com/opendatahub-io/openshell
+    git.commit: af1ddd9a2c36e91691ddd9f33b4c8bbe853752cd
+  odh-workbench-jupyter-universal-cpu-py312-c9s:
+    git.url: https://github.com/opendatahub-io/notebooks
+    git.commit: 98855910f8ab180f2558a444e3b5d4ece9c05047
+  odh-openshell-e2e:
+    git.url: https://github.com/opendatahub-io/openshell
+    git.commit: 40279c869b42929de7adc12f84d4d889acb22a27
+  odh-openshell-dashboard:
+    git.url: https://github.com/opendatahub-io/openshell-dashboard
+    git.commit: ae76c317adec8a5d7464da455b261cb5c4c48bd0
+  odh-llm-d-kv-pvc-evictor:
+    git.url: https://github.com/opendatahub-io/llm-d-kv-cache
+    git.commit: f4cd204a8603b5fefbff769e49d95ac71e2d6291
+  odh-workbench-codeserver-minimal-cpu-py312:
+    git.url: ''
+    git.commit: ''
+  odh-kserve-kueue-controller:
+    git.url: https://github.com/opendatahub-io/kserve
+    git.commit: 958de53103072778ce83cf59b22bbf299e5b0ed3
+  odh-mcp-lifecycle-module-operator-e2e:
+    git.url: https://github.com/opendatahub-io/mcp-lifecycle-module-operator
+    git.commit: 8d28cc356ef889024ab4fd551c8a7946bfc90305
