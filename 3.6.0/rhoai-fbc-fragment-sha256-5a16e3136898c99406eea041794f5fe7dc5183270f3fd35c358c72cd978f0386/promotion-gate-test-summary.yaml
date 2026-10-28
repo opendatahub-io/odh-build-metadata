@@ -1,0 +1,122 @@
+build: '6'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/6/
+rhoaiVersion: 3.6.0
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:5a16e3136898c99406eea041794f5fe7dc5183270f3fd35c358c72cd978f0386
+updateChannel: stable-3.x
+clusterName: nmanos-konflux1
+openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-10-28-1015.log.gz
+failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 3
+  failed: 1
+  skipped: 0
+components:
+  aigateway:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  dashboard:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  dataregistry:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  trustyai:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
