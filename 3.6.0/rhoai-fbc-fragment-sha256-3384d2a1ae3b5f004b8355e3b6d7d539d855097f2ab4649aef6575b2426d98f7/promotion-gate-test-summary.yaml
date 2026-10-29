@@ -1,0 +1,107 @@
+build: '14'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/14/
+rhoaiVersion: 3.6.0
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:3384d2a1ae3b5f004b8355e3b6d7d539d855097f2ab4649aef6575b2426d98f7
+updateChannel: stable-3.x
+clusterName: nmanos-konflux1
+openshiftVersion: 4.21-latest
+podLogArchive: ods-install/rhods-logs-2026-10-29-1458.log.gz
+failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 3
+  failed: 1
+  skipped: 0
+components:
+  aigateway:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  dashboard:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  trustyai:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
