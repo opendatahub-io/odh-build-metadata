@@ -1,0 +1,59 @@
+{{- include "grid-operator.normalize" . }}
+{{- include "grid-operator.validateGrid" . }}
+{{- with .Values.grid }}
+{{- if .id }}
+apiVersion: grid.praxis.fast/v1alpha1
+kind: GridNetwork
+metadata:
+  name: {{ .network | quote }}
+  labels:
+    {{- include "grid-operator.labels" $ | nindent 4 }}
+    {{- if ne (dig "membership" "source" "Swim" .) "Local" }}
+    grid.praxis.fast/auto-discover-sites: "true"
+    {{- end }}
+  annotations:
+    {{- include "grid-operator.afterCrds" $ | nindent 4 }}
+spec:
+  gridId: {{ .id | quote }}
+  membership:
+    mode: {{ dig "membership" "source" "Swim" . | quote }}
+  {{- with .seeds }}
+  seeds:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+  {{- with .signals }}
+  signalTransport:
+    mode: {{ . | quote }}
+  {{- end }}
+  {{- if or .peerTrust .signedState }}
+  peerTrust:
+    mode: {{ .peerTrust | default "pin" | quote }}
+    {{- with .signedState }}
+    signedState: {{ . | quote }}
+    {{- end }}
+  {{- end }}
+  {{- with $.Values.gateway.serviceName }}
+  consumerGateways:
+    - name: {{ . | quote }}
+      namespace: {{ $.Values.gateway.namespace | default $.Release.Namespace | quote }}
+      siteName: {{ $.Values.swim.siteName | quote }}
+      {{- with $.Values.gateway.praxisConfig }}
+      praxisConfig:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+  {{- end }}
+  {{- $e := $.Values.enrollment }}
+  tls:
+    siteSecretRef:
+      name: {{ $e.identitySecretName | default "grid-site-identity" | quote }}
+      namespace: {{ $.Release.Namespace | quote }}
+    caSecretRef:
+      name: {{ $e.caSecretName | default "grid-ca" | quote }}
+      namespace: {{ $.Release.Namespace | quote }}
+    {{- with and (ne (dig "membership" "source" "Swim" .) "Local") .swimKeySecretName }}
+    swimKeySecretRef:
+      name: {{ . | quote }}
+      namespace: {{ $.Release.Namespace | quote }}
+    {{- end }}
+{{- end }}
+{{- end }}
