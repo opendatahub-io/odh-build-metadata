@@ -1,0 +1,106 @@
+build: '29'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/29/
+rhoaiVersion: 3.6.0
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:ae2dc7119fd72c0747d7b87943017d6a9845e01fd6ccae84f628f3250b3f7a38
+updateChannel: stable-3.x
+clusterName: pg-b29
+openshiftVersion: 4.20-latest
+failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 3
+  failed: 1
+  skipped: 0
+components:
+  aigateway:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  dashboard:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  trustyai:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
