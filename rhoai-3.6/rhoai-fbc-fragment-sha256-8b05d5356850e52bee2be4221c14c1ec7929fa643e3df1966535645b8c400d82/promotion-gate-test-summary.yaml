@@ -7,6 +7,7 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:8b05d5356850e52bee2be4221c1
 updateChannel: stable-3.x
 clusterName: pg-b30
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-11-03-1021.log.gz
 failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
 cluster-health:
   status: passed
