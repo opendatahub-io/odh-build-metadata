@@ -1,0 +1,26 @@
+{{- include "grid-operator.normalize" . }}
+{{- if .Values.metrics.service.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "grid-operator.fullname" . }}-metrics
+  labels:
+    {{- include "grid-operator.labels" . | nindent 4 }}
+  {{- $annotations := deepCopy (.Values.metrics.service.annotations | default dict) }}
+  {{- if include "grid-operator.metricsTls.serviceCa" . }}
+  {{- $_ := set $annotations "service.beta.openshift.io/serving-cert-secret-name" (include "grid-operator.metricsTls.secret" .) }}
+  {{- end }}
+  {{- with $annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: metrics
+      port: {{ .Values.metrics.service.port }}
+      targetPort: metrics
+      protocol: TCP
+  selector:
+    {{- include "grid-operator.selectorLabels" . | nindent 4 }}
+{{- end }}

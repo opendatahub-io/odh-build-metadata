@@ -1,0 +1,62 @@
+{{- include "grid-operator.normalize" . }}
+{{- if .Values.serviceMonitor.enabled }}
+{{- if not .Values.metrics.service.enabled }}
+{{- fail "serviceMonitor.enabled requires metrics.service.enabled" }}
+{{- end }}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ include "grid-operator.fullname" . }}
+  {{- if .Values.serviceMonitor.namespace }}
+  namespace: {{ .Values.serviceMonitor.namespace }}
+  {{- else }}
+  namespace: {{ .Release.Namespace }}
+  {{- end }}
+  labels:
+    {{- include "grid-operator.labels" . | nindent 4 }}
+    {{- with .Values.serviceMonitor.labels }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
+spec:
+  namespaceSelector:
+    matchNames:
+      - {{ .Release.Namespace }}
+  selector:
+    matchLabels:
+      {{- include "grid-operator.selectorLabels" . | nindent 6 }}
+  endpoints:
+    - port: metrics
+      {{- with .Values.serviceMonitor.interval }}
+      interval: {{ . | quote }}
+      {{- end }}
+      {{- with .Values.serviceMonitor.scrapeTimeout }}
+      scrapeTimeout: {{ . | quote }}
+      {{- end }}
+      {{- if include "grid-operator.metricsTls.enabled" . }}
+      scheme: https
+      tlsConfig:
+        {{- if .Values.serviceMonitor.tlsConfig }}
+        {{- toYaml .Values.serviceMonitor.tlsConfig | nindent 8 }}
+        {{- else if include "grid-operator.metricsTls.serviceCa" . }}
+        ca:
+          configMap:
+            name: openshift-service-ca.crt
+            key: service-ca.crt
+        serverName: {{ printf "%s-metrics.%s.svc" (include "grid-operator.fullname" .) .Release.Namespace }}
+        {{- else if eq (include "grid-operator.metricsTls.source" .) "siteIdentity" }}
+        {{- if not .Values.swim.siteName }}
+        {{- fail "serviceMonitor with the site identity needs swim.siteName or enrollment.siteName, the name its certificate carries" }}
+        {{- end }}
+        {{- if and .Values.serviceMonitor.namespace (ne .Values.serviceMonitor.namespace .Release.Namespace) }}
+        {{- fail "serviceMonitor.namespace differs from the release namespace, where the grid CA Secret lives: set serviceMonitor.tlsConfig" }}
+        {{- end }}
+        ca:
+          secret:
+            name: {{ (.Values.enrollment).caSecretName | default "grid-ca" | quote }}
+            key: ca.crt
+        serverName: {{ printf "%s.grid.internal" .Values.swim.siteName }}
+        {{- else }}
+        {{- fail "serviceMonitor.tlsConfig is required for metrics.tls with an existingSecret" }}
+        {{- end }}
+      {{- end }}
+{{- end }}
