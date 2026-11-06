@@ -1,13 +1,12 @@
-build: '35'
+build: '36'
 qualityGate: ''
 status: failed
-jenkinsUrl: /job/devops/job/promotion-gate-tests/35/
+jenkinsUrl: /job/devops/job/promotion-gate-tests/36/
 rhoaiVersion: 3.6.0
 odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:112243e378e66fe4e8ece17aa49f4a4e1d9c93d5320e2672f759d3c801abfb31
 updateChannel: stable-3.x
-clusterName: pg-b35
+clusterName: pg-b36
 openshiftVersion: 4.20-latest
-podLogArchive: ods-install/rhods-logs-2026-11-04-1524.log.gz
 failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
 cluster-health:
   status: passed
@@ -71,7 +70,7 @@ components:
     failed: 0
     skipped: 0
   modelsasservice:
-    status: NotReady
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
