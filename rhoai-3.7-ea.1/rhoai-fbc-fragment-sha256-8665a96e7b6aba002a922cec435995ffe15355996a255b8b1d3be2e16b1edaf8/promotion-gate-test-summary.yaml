@@ -7,6 +7,12 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:8665a96e7b6aba002a922cec435
 updateChannel: beta
 clusterName: nmanos-konflux1
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-11-09-2029.log.gz
+podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/38/rhods-logs-2026-11-09-2029.log.gz
+bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/38/promotion-gate-bvt-38.tar.gz
+podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/38/rhods-logs-2026-11-09-2029.log.gz
+bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/38/promotion-gate-bvt-38.tar.gz
+s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F38%2F
 failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
 ocpConsoleUrl: https://console-openshift-console.apps.rosa.nmanos-konflux1.durx.p3.openshiftapps.com
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-8665a96e7b6aba002a922cec435995ffe15355996a255b8b1d3be2e16b1edaf8/promotion-gate-test-summary.yaml
@@ -108,5 +114,7 @@ components:
     failed: 0
     skipped: 0
 orgPulseLinks:
+- label: S3
+  href: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F38%2F
 - label: Image
   href: https://quay.io/repository/rhoai/rhoai-fbc-fragment/manifest/sha256:8665a96e7b6aba002a922cec435995ffe15355996a255b8b1d3be2e16b1edaf8
