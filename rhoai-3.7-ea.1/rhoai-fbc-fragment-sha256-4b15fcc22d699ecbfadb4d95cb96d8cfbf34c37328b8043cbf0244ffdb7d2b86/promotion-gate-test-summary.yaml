@@ -7,7 +7,13 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:4b15fcc22d699ecbfadb4d95cb9
 updateChannel: beta
 clusterName: pg-b1
 openshiftVersion: 4.20-latest
-failureReason: Operator deployment failed
+podLogArchive: ods-install/rhods-logs-2026-11-11-1255.log.gz
+podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/1/rhods-logs-2026-11-11-1255.log.gz
+bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/1/promotion-gate-bvt-1.tar.gz
+podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/1/rhods-logs-2026-11-11-1255.log.gz
+bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/1/promotion-gate-bvt-1.tar.gz
+s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Frhoai-nightly-bvt%2F1%2F
+failureReason: 'Can Install RHODS Operator: Keyword ''Check If Pod Exists'' failed after retrying for 20 minutes. The last error was: FAIL != PASS'
 ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b1.4z33.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/nightly-bvt/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-4b15fcc22d699ecbfadb4d95cb96d8cfbf34c37328b8043cbf0244ffdb7d2b86/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:4b15fcc22d699ecbfadb4d95cb96d8cfbf34c37328b8043cbf0244ffdb7d2b86
@@ -137,3 +143,6 @@ components:
     passed: 0
     failed: 0
     skipped: 0
+orgPulseLinks:
+- label: S3
+  href: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Frhoai-nightly-bvt%2F1%2F
