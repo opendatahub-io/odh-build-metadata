@@ -7,7 +7,13 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:217d8fb6e62e30e84ead739efb4
 updateChannel: beta
 clusterName: pg-b40
 openshiftVersion: 4.20-latest
-failureReason: Operator deployment failed
+podLogArchive: ods-install/rhods-logs-2026-11-11-0955.log.gz
+podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/40/rhods-logs-2026-11-11-0955.log.gz
+bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/40/promotion-gate-bvt-40.tar.gz
+podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/40/rhods-logs-2026-11-11-0955.log.gz
+bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/40/promotion-gate-bvt-40.tar.gz
+s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F40%2F
+failureReason: 'Can Install RHODS Operator: Keyword ''Check If Pod Exists'' failed after retrying for 20 minutes. The last error was: FAIL != PASS'
 ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b40.rd71.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-217d8fb6e62e30e84ead739efb45fda964a040cb8ab7cf9f5862a6b1a1eeb1c4/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:217d8fb6e62e30e84ead739efb45fda964a040cb8ab7cf9f5862a6b1a1eeb1c4
@@ -122,3 +128,6 @@ components:
     passed: 0
     failed: 0
     skipped: 0
+orgPulseLinks:
+- label: S3
+  href: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F40%2F
