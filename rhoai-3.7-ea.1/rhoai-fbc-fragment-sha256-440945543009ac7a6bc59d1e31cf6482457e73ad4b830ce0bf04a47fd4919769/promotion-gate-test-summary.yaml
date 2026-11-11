@@ -1,15 +1,14 @@
-build: '39'
+build: '43'
 qualityGate: ''
 status: failed
-jenkinsUrl: /job/devops/job/promotion-gate-tests/39/
+jenkinsUrl: /job/devops/job/promotion-gate-tests/43/
 rhoaiVersion: 3.7.0-ea.1
 odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:440945543009ac7a6bc59d1e31cf6482457e73ad4b830ce0bf04a47fd4919769
 updateChannel: beta
-clusterName: pg-b39
+clusterName: pg-b43
 openshiftVersion: 4.20-latest
-podLogArchive: ods-install/rhods-logs-2026-11-10-1053.log.gz
 failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
-ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b39.2il7.s3.devshift.org
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b43.3yr9.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-440945543009ac7a6bc59d1e31cf6482457e73ad4b830ce0bf04a47fd4919769/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:440945543009ac7a6bc59d1e31cf6482457e73ad4b830ce0bf04a47fd4919769
 cluster-health:
@@ -43,8 +42,13 @@ components:
     passed: 0
     failed: 0
     skipped: 0
+  data:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
   feastoperator:
-    status: NotReady
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
@@ -98,8 +102,23 @@ components:
     passed: 0
     failed: 0
     skipped: 0
-  trustyai:
-    status: Ready
+  ai-evaluations:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-guardrails:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety-orchestration:
+    status: NotAvailable
     passed: 0
     failed: 0
     skipped: 0
@@ -108,6 +127,3 @@ components:
     passed: 0
     failed: 0
     skipped: 0
-orgPulseLinks:
-- label: Image
-  href: https://quay.io/repository/rhoai/rhoai-fbc-fragment/manifest/sha256:440945543009ac7a6bc59d1e31cf6482457e73ad4b830ce0bf04a47fd4919769
