@@ -7,6 +7,12 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:440945543009ac7a6bc59d1e31c
 updateChannel: beta
 clusterName: pg-b43
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-11-11-1405.log.gz
+podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/43/rhods-logs-2026-11-11-1405.log.gz
+bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/43/promotion-gate-bvt-43.tar.gz
+podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/43/rhods-logs-2026-11-11-1405.log.gz
+bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/43/promotion-gate-bvt-43.tar.gz
+s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F43%2F
 failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health Check failed! ****'
 ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b43.3yr9.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-440945543009ac7a6bc59d1e31cf6482457e73ad4b830ce0bf04a47fd4919769/promotion-gate-test-summary.yaml
@@ -127,3 +133,6 @@ components:
     passed: 0
     failed: 0
     skipped: 0
+orgPulseLinks:
+- label: S3
+  href: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F43%2F
