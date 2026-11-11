@@ -1,0 +1,139 @@
+build: '1'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/rhoai-nightly-bvt/1/
+rhoaiVersion: 3.7.0-ea.1
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:4b15fcc22d699ecbfadb4d95cb96d8cfbf34c37328b8043cbf0244ffdb7d2b86
+updateChannel: beta
+clusterName: pg-b1
+openshiftVersion: 4.20-latest
+failureReason: Operator deployment failed
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b1.4z33.s3.devshift.org
+githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/nightly-bvt/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-4b15fcc22d699ecbfadb4d95cb96d8cfbf34c37328b8043cbf0244ffdb7d2b86/promotion-gate-test-summary.yaml
+operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:4b15fcc22d699ecbfadb4d95cb96d8cfbf34c37328b8043cbf0244ffdb7d2b86
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 0
+  failed: 0
+  skipped: 0
+components:
+  dashboard:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-evaluations:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-guardrails:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety-orchestration:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  dataregistry:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
