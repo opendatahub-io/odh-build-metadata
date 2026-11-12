@@ -1,0 +1,124 @@
+build: '4'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/rhoai-nightly-bvt/4/
+rhoaiVersion: 3.5.3
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:9b0461468763dc997525364a2ead15b9af6e339a79b76f05eba391174cdf1276
+updateChannel: stable-3.5
+clusterName: nb35-2506
+openshiftVersion: 4.20-latest
+failureReason: Operator deployment failed
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.nb35-2506.aby1.s3.devshift.org
+githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/nightly-bvt/rhoai-3.5/rhoai-fbc-fragment-sha256-9b0461468763dc997525364a2ead15b9af6e339a79b76f05eba391174cdf1276/promotion-gate-test-summary.yaml
+operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:9b0461468763dc997525364a2ead15b9af6e339a79b76f05eba391174cdf1276
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 0
+  failed: 0
+  skipped: 0
+components:
+  dashboard:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-evaluations:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-guardrails:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety-orchestration:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
