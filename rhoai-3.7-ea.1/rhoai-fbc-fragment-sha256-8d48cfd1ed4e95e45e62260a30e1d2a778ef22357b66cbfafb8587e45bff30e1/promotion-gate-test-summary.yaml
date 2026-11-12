@@ -1,0 +1,129 @@
+build: '46'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/46/
+rhoaiVersion: 3.7.0-ea.1
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:8d48cfd1ed4e95e45e62260a30e1d2a778ef22357b66cbfafb8587e45bff30e1
+updateChannel: beta
+clusterName: pg-b46
+openshiftVersion: 4.20-latest
+failureReason: Operator deployment failed
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b46.lkn4.s3.devshift.org
+githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-8d48cfd1ed4e95e45e62260a30e1d2a778ef22357b66cbfafb8587e45bff30e1/promotion-gate-test-summary.yaml
+operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:8d48cfd1ed4e95e45e62260a30e1d2a778ef22357b66cbfafb8587e45bff30e1
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 0
+  failed: 0
+  skipped: 0
+components:
+  aigateway:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  dashboard:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  data:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  kueue:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-evaluations:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-guardrails:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety-orchestration:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
