@@ -1,20 +1,15 @@
-build: '46'
+build: '49'
 qualityGate: ''
 status: failed
-jenkinsUrl: /job/devops/job/promotion-gate-tests/46/
+jenkinsUrl: /job/devops/job/promotion-gate-tests/49/
 rhoaiVersion: 3.7.0-ea.1
 odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:8d48cfd1ed4e95e45e62260a30e1d2a778ef22357b66cbfafb8587e45bff30e1
 updateChannel: beta
-clusterName: pg-b46
+clusterName: pg-b45
 openshiftVersion: 4.20-latest
-podLogArchive: ods-install/rhods-logs-2026-11-12-1335.log.gz
-podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/46/rhods-logs-2026-11-12-1335.log.gz
-bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/46/promotion-gate-bvt-46.tar.gz
-podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/46/rhods-logs-2026-11-12-1335.log.gz
-bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/46/promotion-gate-bvt-46.tar.gz
-s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F46%2F
-failureReason: 'Can Install RHODS Operator: Keyword timeout 10 minutes exceeded.'
-ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b46.lkn4.s3.devshift.org
+failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED:
+  RHOAI Operator Health Check failed! ****'
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b45.4vri.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-8d48cfd1ed4e95e45e62260a30e1d2a778ef22357b66cbfafb8587e45bff30e1/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:8d48cfd1ed4e95e45e62260a30e1d2a778ef22357b66cbfafb8587e45bff30e1
 cluster-health:
@@ -24,87 +19,32 @@ cluster-health:
   skipped: 0
 operator-health:
   status: failed
-  passed: 0
-  failed: 0
+  passed: 2
+  failed: 2
   skipped: 0
 components:
-  aigateway:
-    status: NotAvailable
+  dashboard:
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
   aipipelines:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  batchgateway:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  dashboard:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  data:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  feastoperator:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  kserve:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  kueue:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  mcplifecycleoperator:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  mlflowoperator:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  modelregistry:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  modelsasservice:
-    status: NotAvailable
-    passed: 0
-    failed: 0
-    skipped: 0
-  ogx:
-    status: NotAvailable
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
   ray:
-    status: NotAvailable
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
-  sparkoperator:
-    status: NotAvailable
+  workbenches:
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
-  trainer:
-    status: NotAvailable
+  kserve:
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
@@ -128,11 +68,68 @@ components:
     passed: 0
     failed: 0
     skipped: 0
-  workbenches:
-    status: NotAvailable
+  trainingoperator:
+    status: Unknown
     passed: 0
     failed: 0
     skipped: 0
-orgPulseLinks:
-- label: S3
-  href: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F46%2F
+  trainer:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  dataregistry:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
