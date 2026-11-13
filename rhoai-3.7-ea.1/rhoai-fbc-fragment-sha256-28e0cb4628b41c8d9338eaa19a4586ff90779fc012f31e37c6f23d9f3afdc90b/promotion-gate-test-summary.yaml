@@ -1,28 +1,17 @@
-build: '53'
+build: '54'
 qualityGate: ''
 status: failed
-jenkinsUrl: /job/devops/job/promotion-gate-tests/53/
+jenkinsUrl: /job/devops/job/promotion-gate-tests/54/
 rhoaiVersion: 3.7.0-ea.1
 odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:28e0cb4628b41c8d9338eaa19a4586ff90779fc012f31e37c6f23d9f3afdc90b
 updateChannel: beta
 clusterName: pg-b53
 openshiftVersion: 4.20-latest
-podLogArchive: ods-install/rhods-logs-2026-11-13-0550.log.gz
-podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/53/rhods-logs-2026-11-13-0550.log.gz
-bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/53/promotion-gate-bvt-53.tar.gz
-podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/53/rhods-logs-2026-11-13-0550.log.gz
-bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/53/promotion-gate-bvt-53.tar.gz
 failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED:
   RHOAI Operator Health Check failed! ****'
 ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b53.yhq6.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-28e0cb4628b41c8d9338eaa19a4586ff90779fc012f31e37c6f23d9f3afdc90b/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:28e0cb4628b41c8d9338eaa19a4586ff90779fc012f31e37c6f23d9f3afdc90b
-orgPulseLinks:
-- label: Pod logs
-  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/53/rhods-logs-2026-11-13-0550.log.gz
-- label: BVT results
-  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/53/promotion-gate-bvt-53.tar.gz
-s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F53%2F
 cluster-health:
   status: passed
   passed: 1
@@ -60,22 +49,22 @@ components:
     failed: 0
     skipped: 0
   ai-evaluations:
-    status: NotAvailable
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
   ai-guardrails:
-    status: NotAvailable
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
   ai-safety:
-    status: NotAvailable
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
   ai-safety-orchestration:
-    status: NotAvailable
+    status: Ready
     passed: 0
     failed: 0
     skipped: 0
