@@ -1,0 +1,146 @@
+build: '8'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/rhoai-nightly-bvt/8/
+rhoaiVersion: 3.7.0-ea.1
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:211a7fb1da3a8ffcdc628dff2440d47a520ccfe156afe639b5329a5aca238df4
+updateChannel: beta
+clusterName: nb371-2511
+openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-11-13-0427.log.gz
+podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/8/rhods-logs-2026-11-13-0427.log.gz
+bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/8/promotion-gate-bvt-8.tar.gz
+podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/8/rhods-logs-2026-11-13-0427.log.gz
+bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/8/promotion-gate-bvt-8.tar.gz
+failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED:
+  RHOAI Operator Health Check failed! ****'
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.nb371-2511.fsb5.s3.devshift.org
+githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/nightly-bvt/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-211a7fb1da3a8ffcdc628dff2440d47a520ccfe156afe639b5329a5aca238df4/promotion-gate-test-summary.yaml
+operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:211a7fb1da3a8ffcdc628dff2440d47a520ccfe156afe639b5329a5aca238df4
+orgPulseLinks:
+- label: Pod logs
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/8/rhods-logs-2026-11-13-0427.log.gz
+- label: BVT results
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/8/promotion-gate-bvt-8.tar.gz
+s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Frhoai-nightly-bvt%2F8%2F
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 2
+  failed: 2
+  skipped: 0
+components:
+  dashboard:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-evaluations:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-guardrails:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety-orchestration:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
+  dataregistry:
+    status: Ready
+    passed: 0
+    failed: 0
+    skipped: 0
