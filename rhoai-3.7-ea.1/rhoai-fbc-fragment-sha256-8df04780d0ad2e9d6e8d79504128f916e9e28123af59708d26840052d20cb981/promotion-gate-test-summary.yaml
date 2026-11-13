@@ -7,11 +7,26 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:8df04780d0ad2e9d6e8d7950412
 updateChannel: beta
 clusterName: pg-b70
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-11-13-2244.log.gz
+podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/72/rhods-logs-2026-11-13-2244.log.gz
+bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/72/promotion-gate-bvt-72.tar.gz
+podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/72/rhods-logs-2026-11-13-2244.log.gz
+bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/72/promotion-gate-bvt-72.tar.gz
 failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED:
   RHOAI Operator Health Check failed! ****'
+jiraIssues:
+- key: RHOAIENG-103763
+  url: https://redhat.atlassian.net/browse/RHOAIENG-103763
+  action: reused
 ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b70.xvnr.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-8df04780d0ad2e9d6e8d79504128f916e9e28123af59708d26840052d20cb981/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:8df04780d0ad2e9d6e8d79504128f916e9e28123af59708d26840052d20cb981
+orgPulseLinks:
+- label: Pod logs
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/72/rhods-logs-2026-11-13-2244.log.gz
+- label: BVT results
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/72/promotion-gate-bvt-72.tar.gz
+s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F72%2F
 cluster-health:
   status: passed
   passed: 1
