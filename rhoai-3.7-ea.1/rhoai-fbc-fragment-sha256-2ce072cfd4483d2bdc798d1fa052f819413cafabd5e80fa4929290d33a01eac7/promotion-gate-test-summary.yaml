@@ -1,15 +1,15 @@
-build: '88'
+build: '89'
 qualityGate: ''
 status: failed
-jenkinsUrl: /job/devops/job/promotion-gate-tests/88/
+jenkinsUrl: /job/devops/job/promotion-gate-tests/89/
 rhoaiVersion: 3.7.0-ea.1
 odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:2ce072cfd4483d2bdc798d1fa052f819413cafabd5e80fa4929290d33a01eac7
 updateChannel: beta
-clusterName: pg-b88
+clusterName: pg-b89
 openshiftVersion: 4.20-latest
 failureReason: 'Build Verification - RHOAI Health Check failed: **** PIPELINE STOPPED:
   RHOAI Operator Health Check failed! ****'
-ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b88.nty8.s3.devshift.org
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b89.0wlg.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-2ce072cfd4483d2bdc798d1fa052f819413cafabd5e80fa4929290d33a01eac7/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:2ce072cfd4483d2bdc798d1fa052f819413cafabd5e80fa4929290d33a01eac7
 cluster-health:
