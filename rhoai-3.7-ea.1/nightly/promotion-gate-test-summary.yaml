@@ -1,0 +1,133 @@
+build: '1'
+qualityGate: ''
+status: passed
+jenkinsUrl: /job/devops/job/debug-promotion-gate-tests/1/
+rhoaiVersion: 3.7-ea.1
+odsBuildUrl: nightly
+correlationId: debug-promotion-fpr
+updateChannel: fast
+clusterName: debug-promotion-fpr
+openshiftVersion: 4.20-latest
+githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/nightly/promotion-gate-test-summary.yaml
+operatorImage: nightly
+cluster-health:
+  status: passed
+  passed: 1
+  failed: 0
+  skipped: 0
+operator-health:
+  status: passed
+  passed: 2
+  failed: 0
+  skipped: 0
+components:
+  dashboard:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-evaluations:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-guardrails:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety-orchestration:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotReady
+    passed: 0
+    failed: 0
+    skipped: 0
+  dataregistry:
+    status: Unknown
+    passed: 0
+    failed: 0
+    skipped: 0
