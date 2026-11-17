@@ -1,7 +1,7 @@
-job_url: "/job/devops/job/early-gate-tests/3/"
+job_url: "/job/devops/job/early-gate-tests/7/"
 correlation_id: "fpr-96241-nmanos-stage"
 test_summary:
   Failed: 0
-  Passed: 0
+  Passed: 12
   Skipped: 0
-  Total: 0
+  Total: 12
