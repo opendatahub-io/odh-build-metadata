@@ -1,7 +1,8 @@
-job_url: "/job/devops/job/debug-early-gate-tests/1/"
-correlation_id: "debug-early-fpr"
+job_url: "/job/devops/job/early-gate-tests/4/"
+correlation_id: "fpr-96241-nmanos-stage"
+fbc_tag: "2.26-latest"
 test_summary:
   Failed: 0
-  Passed: 7
+  Passed: 1
   Skipped: 0
-  Total: 7
+  Total: 1
