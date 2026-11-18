@@ -7,6 +7,7 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:211a7fb1da3a8ffcdc628dff244
 updateChannel: beta
 clusterName: nmanos-stage
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-11-18-0816.log.gz
 ocpConsoleUrl: https://console-openshift-console.apps.rosa.nmanos-stage.lxj4.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-211a7fb1da3a8ffcdc628dff2440d47a520ccfe156afe639b5329a5aca238df4/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:211a7fb1da3a8ffcdc628dff2440d47a520ccfe156afe639b5329a5aca238df4
