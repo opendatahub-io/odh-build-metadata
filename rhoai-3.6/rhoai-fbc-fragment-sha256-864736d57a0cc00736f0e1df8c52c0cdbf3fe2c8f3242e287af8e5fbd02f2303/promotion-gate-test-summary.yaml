@@ -7,9 +7,20 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:864736d57a0cc00736f0e1df8c5
 updateChannel: stable-3.x
 clusterName: nb36-2520
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-11-24-1352.log.gz
+podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/16/rhods-logs-2026-11-24-1352.log.gz
+bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/16/promotion-gate-bvt-16.tar.gz
+podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/16/rhods-logs-2026-11-24-1352.log.gz
+bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/16/promotion-gate-bvt-16.tar.gz
 ocpConsoleUrl: https://console-openshift-console.apps.rosa.nb36-2520.0ywl.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/nightly-bvt/rhoai-3.6/rhoai-fbc-fragment-sha256-864736d57a0cc00736f0e1df8c52c0cdbf3fe2c8f3242e287af8e5fbd02f2303/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:864736d57a0cc00736f0e1df8c52c0cdbf3fe2c8f3242e287af8e5fbd02f2303
+orgPulseLinks:
+- label: Pod logs
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/16/rhods-logs-2026-11-24-1352.log.gz
+- label: BVT results
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/16/promotion-gate-bvt-16.tar.gz
+s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Frhoai-nightly-bvt%2F16%2F
 cluster-health:
   status: passed
   passed: 1
