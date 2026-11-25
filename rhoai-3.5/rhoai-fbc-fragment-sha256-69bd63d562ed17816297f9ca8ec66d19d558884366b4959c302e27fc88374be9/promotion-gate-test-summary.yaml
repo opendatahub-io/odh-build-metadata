@@ -1,35 +1,35 @@
-build: '20'
+build: '19'
 qualityGate: ''
 status: failed
-jenkinsUrl: /job/devops/job/rhoai-nightly-bvt/20/
+jenkinsUrl: /job/devops/job/rhoai-nightly-bvt/19/
 rhoaiVersion: 3.5.4
 odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:69bd63d562ed17816297f9ca8ec66d19d558884366b4959c302e27fc88374be9
 updateChannel: stable-3.5
-clusterName: nb35-2524
+clusterName: nb35-2523
 openshiftVersion: 4.20-latest
 podLogArchive: ods-install/rhods-logs-2026-11-25-1329.log.gz
-podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/20/rhods-logs-2026-11-25-1329.log.gz
-bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/20/promotion-gate-bvt-20.tar.gz
-podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/20/rhods-logs-2026-11-25-1329.log.gz
-bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/20/promotion-gate-bvt-20.tar.gz
+podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/19/rhods-logs-2026-11-25-1329.log.gz
+bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/19/promotion-gate-bvt-19.tar.gz
+podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/19/rhods-logs-2026-11-25-1329.log.gz
+bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/19/promotion-gate-bvt-19.tar.gz
 failureReason: 'RHOAI Health Check failed: **** PIPELINE STOPPED: RHOAI Operator Health
   Check failed! ****'
 jiraIssues:
 - key: RHAI-59786
   url: https://redhat.atlassian.net/browse/RHAI-59786
-  action: created
+  action: reused
 - key: RHAI-59787
   url: https://redhat.atlassian.net/browse/RHAI-59787
-  action: created
-ocpConsoleUrl: https://console-openshift-console.apps.rosa.nb35-2524.8zsd.s3.devshift.org
+  action: reused
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.nb35-2523.2il7.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/nightly-bvt/rhoai-3.5/rhoai-fbc-fragment-sha256-69bd63d562ed17816297f9ca8ec66d19d558884366b4959c302e27fc88374be9/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:69bd63d562ed17816297f9ca8ec66d19d558884366b4959c302e27fc88374be9
 orgPulseLinks:
 - label: Pod logs
-  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/20/rhods-logs-2026-11-25-1329.log.gz
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/19/rhods-logs-2026-11-25-1329.log.gz
 - label: BVT results
-  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/20/promotion-gate-bvt-20.tar.gz
-s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Frhoai-nightly-bvt%2F20%2F
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/19/promotion-gate-bvt-19.tar.gz
+s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Frhoai-nightly-bvt%2F19%2F
 cluster-health:
   status: passed
   passed: 1
