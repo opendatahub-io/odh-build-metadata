@@ -1,0 +1,135 @@
+build: '93'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/93/
+rhoaiVersion: 3.7.0-ea.1
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:d0711f566af6fb83c052f9b476afe018fd0d4f63b37a2baf819193b4ba2b8e19
+updateChannel: beta
+clusterName: pg-b93
+openshiftVersion: 4.20-latest
+failureReason: 'Cluster Health Check failed: **** PIPELINE STOPPED: Cluster Health
+  Check failed! The cluster nodes are not healthy. ****'
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b93.vb5l.s3.devshift.org
+githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-d0711f566af6fb83c052f9b476afe018fd0d4f63b37a2baf819193b4ba2b8e19/promotion-gate-test-summary.yaml
+operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:d0711f566af6fb83c052f9b476afe018fd0d4f63b37a2baf819193b4ba2b8e19
+cluster-health:
+  status: failed
+  passed: 0
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 0
+  failed: 0
+  skipped: 0
+components:
+  dashboard:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-evaluations:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-guardrails:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety-orchestration:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
+  dataregistry:
+    status: NotAvailable
+    passed: 0
+    failed: 0
+    skipped: 0
