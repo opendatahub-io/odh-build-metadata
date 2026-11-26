@@ -1,28 +1,17 @@
-build: '93'
+build: '94'
 qualityGate: ''
 status: failed
-jenkinsUrl: /job/devops/job/promotion-gate-tests/93/
+jenkinsUrl: /job/devops/job/promotion-gate-tests/94/
 rhoaiVersion: 3.7.0-ea.1
 odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:d0711f566af6fb83c052f9b476afe018fd0d4f63b37a2baf819193b4ba2b8e19
 updateChannel: beta
-clusterName: pg-b93
+clusterName: pg-b94
 openshiftVersion: 4.20-latest
-podLogArchive: ods-install/rhods-logs-2026-11-26-1143.log.gz
-podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/93/rhods-logs-2026-11-26-1143.log.gz
-bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/93/promotion-gate-bvt-93.tar.gz
-podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/93/rhods-logs-2026-11-26-1143.log.gz
-bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/93/promotion-gate-bvt-93.tar.gz
 failureReason: 'Cluster Health Check failed: **** PIPELINE STOPPED: Cluster Health
   Check failed! The cluster nodes are not healthy. ****'
-ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b93.vb5l.s3.devshift.org
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b94.jdqm.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-d0711f566af6fb83c052f9b476afe018fd0d4f63b37a2baf819193b4ba2b8e19/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:d0711f566af6fb83c052f9b476afe018fd0d4f63b37a2baf819193b4ba2b8e19
-orgPulseLinks:
-- label: Pod logs
-  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/93/rhods-logs-2026-11-26-1143.log.gz
-- label: BVT results
-  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/promotion-gate-tests/93/promotion-gate-bvt-93.tar.gz
-s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Fpromotion-gate-tests%2F93%2F
 cluster-health:
   status: failed
   passed: 0
@@ -35,112 +24,133 @@ operator-health:
   skipped: 0
 components:
   dashboard:
-    status: NotAvailable
+    status: Ready
+    dscComponent: dashboard.standard
     passed: 0
     failed: 0
     skipped: 0
   aipipelines:
-    status: NotAvailable
+    status: Ready
+    dscComponent: aipipelines
     passed: 0
     failed: 0
     skipped: 0
   ray:
-    status: NotAvailable
+    status: Ready
+    dscComponent: ray
     passed: 0
     failed: 0
     skipped: 0
   workbenches:
-    status: NotAvailable
+    status: Ready
+    dscComponent: workbenches
     passed: 0
     failed: 0
     skipped: 0
   kserve:
-    status: NotAvailable
+    status: Ready
+    dscComponent: kserve
     passed: 0
     failed: 0
     skipped: 0
   ai-evaluations:
-    status: NotAvailable
+    status: Ready
+    dscComponent: trustyai
     passed: 0
     failed: 0
     skipped: 0
   ai-guardrails:
-    status: NotAvailable
+    status: Ready
+    dscComponent: trustyai
     passed: 0
     failed: 0
     skipped: 0
   ai-safety:
-    status: NotAvailable
+    status: Ready
+    dscComponent: trustyai
     passed: 0
     failed: 0
     skipped: 0
   ai-safety-orchestration:
-    status: NotAvailable
+    status: Ready
+    dscComponent: trustyai
     passed: 0
     failed: 0
     skipped: 0
   trainingoperator:
-    status: NotAvailable
+    status: Unknown
+    dscComponent: trainer
     passed: 0
     failed: 0
     skipped: 0
   trainer:
-    status: NotAvailable
+    status: Ready
+    dscComponent: trainer
     passed: 0
     failed: 0
     skipped: 0
   modelregistry:
-    status: NotAvailable
+    status: Ready
+    dscComponent: aiHub
     passed: 0
     failed: 0
     skipped: 0
   feastoperator:
-    status: NotAvailable
+    status: Ready
+    dscComponent: data.featureStore
     passed: 0
     failed: 0
     skipped: 0
   llamastackoperator:
-    status: NotAvailable
+    status: NotInstalled
     passed: 0
     failed: 0
     skipped: 0
   ogx:
-    status: NotAvailable
+    status: Ready
+    dscComponent: ogx
     passed: 0
     failed: 0
     skipped: 0
   mlflowoperator:
-    status: NotAvailable
+    status: Ready
+    dscComponent: mlflowoperator
     passed: 0
     failed: 0
     skipped: 0
   modelsasservice:
-    status: NotAvailable
+    status: Ready
+    dscComponent: aigateway.modelsAsAService
     passed: 0
     failed: 0
     skipped: 0
   sparkoperator:
-    status: NotAvailable
+    status: Ready
+    dscComponent: sparkoperator
     passed: 0
     failed: 0
     skipped: 0
   aigateway:
-    status: NotAvailable
+    status: Ready
+    dscComponent: aigateway
     passed: 0
     failed: 0
     skipped: 0
   batchgateway:
-    status: NotAvailable
+    status: Ready
+    dscComponent: aigateway.batchGateway
     passed: 0
     failed: 0
     skipped: 0
   mcplifecycleoperator:
-    status: NotAvailable
+    status: Ready
+    dscComponent: mcplifecycleoperator
     passed: 0
     failed: 0
     skipped: 0
   dataregistry:
-    status: NotAvailable
+    status: Ready
+    dscComponent: data.dataRegistry
     passed: 0
     failed: 0
     skipped: 0
