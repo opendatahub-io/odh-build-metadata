@@ -1,0 +1,156 @@
+build: '98'
+qualityGate: ''
+status: failed
+jenkinsUrl: /job/devops/job/promotion-gate-tests/98/
+rhoaiVersion: 3.7.0-ea.1
+odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:7e5a6e02b5efffac759353805d76ec94037ff371755f92689fa76c47a90d21d3
+updateChannel: beta
+clusterName: pg-b98
+openshiftVersion: 4.20-latest
+failureReason: 'Cluster Health Check failed: **** PIPELINE STOPPED: Cluster Health
+  Check failed! The cluster nodes are not healthy. ****'
+ocpConsoleUrl: https://console-openshift-console.apps.rosa.pg-b98.go0v.s3.devshift.org
+githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/promotion-gate/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-7e5a6e02b5efffac759353805d76ec94037ff371755f92689fa76c47a90d21d3/promotion-gate-test-summary.yaml
+operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:7e5a6e02b5efffac759353805d76ec94037ff371755f92689fa76c47a90d21d3
+cluster-health:
+  status: failed
+  passed: 0
+  failed: 0
+  skipped: 0
+operator-health:
+  status: failed
+  passed: 0
+  failed: 0
+  skipped: 0
+components:
+  dashboard:
+    status: Ready
+    dscComponent: dashboard.standard
+    passed: 0
+    failed: 0
+    skipped: 0
+  aipipelines:
+    status: Ready
+    dscComponent: aipipelines
+    passed: 0
+    failed: 0
+    skipped: 0
+  ray:
+    status: Ready
+    dscComponent: ray
+    passed: 0
+    failed: 0
+    skipped: 0
+  workbenches:
+    status: Ready
+    dscComponent: workbenches
+    passed: 0
+    failed: 0
+    skipped: 0
+  kserve:
+    status: Ready
+    dscComponent: kserve
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-evaluations:
+    status: Ready
+    dscComponent: trustyai
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-guardrails:
+    status: Ready
+    dscComponent: trustyai
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety:
+    status: Ready
+    dscComponent: trustyai
+    passed: 0
+    failed: 0
+    skipped: 0
+  ai-safety-orchestration:
+    status: Ready
+    dscComponent: trustyai
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainingoperator:
+    status: Unknown
+    dscComponent: trainer
+    passed: 0
+    failed: 0
+    skipped: 0
+  trainer:
+    status: Ready
+    dscComponent: trainer
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelregistry:
+    status: Ready
+    dscComponent: aiHub
+    passed: 0
+    failed: 0
+    skipped: 0
+  feastoperator:
+    status: Ready
+    dscComponent: data.featureStore
+    passed: 0
+    failed: 0
+    skipped: 0
+  llamastackoperator:
+    status: NotInstalled
+    passed: 0
+    failed: 0
+    skipped: 0
+  ogx:
+    status: Ready
+    dscComponent: ogx
+    passed: 0
+    failed: 0
+    skipped: 0
+  mlflowoperator:
+    status: Ready
+    dscComponent: mlflowoperator
+    passed: 0
+    failed: 0
+    skipped: 0
+  modelsasservice:
+    status: Ready
+    dscComponent: aigateway.modelsAsAService
+    passed: 0
+    failed: 0
+    skipped: 0
+  sparkoperator:
+    status: Ready
+    dscComponent: sparkoperator
+    passed: 0
+    failed: 0
+    skipped: 0
+  aigateway:
+    status: Ready
+    dscComponent: aigateway
+    passed: 0
+    failed: 0
+    skipped: 0
+  batchgateway:
+    status: Ready
+    dscComponent: aigateway.batchGateway
+    passed: 0
+    failed: 0
+    skipped: 0
+  mcplifecycleoperator:
+    status: NotReady
+    dscComponent: mcplifecycleoperator
+    passed: 0
+    failed: 0
+    skipped: 0
+  dataregistry:
+    status: Ready
+    dscComponent: data.dataRegistry
+    passed: 0
+    failed: 0
+    skipped: 0
