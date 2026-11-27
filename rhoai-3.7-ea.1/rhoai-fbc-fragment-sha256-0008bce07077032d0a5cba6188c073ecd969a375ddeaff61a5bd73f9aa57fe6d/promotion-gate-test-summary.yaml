@@ -7,11 +7,22 @@ odsBuildUrl: quay.io/rhoai/rhoai-fbc-fragment@sha256:0008bce07077032d0a5cba6188c
 updateChannel: beta
 clusterName: nb371-2531
 openshiftVersion: 4.20-latest
+podLogArchive: ods-install/rhods-logs-2026-11-27-0218.log.gz
+podLogArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/26/rhods-logs-2026-11-27-0218.log.gz
+bvtResultsArchiveUrl: https://opensearch-jenkins-dev-966199772278.s3.us-east-1.amazonaws.com/jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/26/promotion-gate-bvt-26.tar.gz
+podLogArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/26/rhods-logs-2026-11-27-0218.log.gz
+bvtResultsArchiveUrlConsole: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/26/promotion-gate-bvt-26.tar.gz
 failureReason: 'Cluster Health Check failed: **** PIPELINE STOPPED: Cluster Health
   Check failed! The cluster nodes are not healthy. ****'
 ocpConsoleUrl: https://console-openshift-console.apps.rosa.nb371-2531.t9tl.s3.devshift.org
 githubSummaryUrl: https://github.com/opendatahub-io/odh-build-metadata/blob/nightly-bvt/rhoai-3.7-ea.1/rhoai-fbc-fragment-sha256-0008bce07077032d0a5cba6188c073ecd969a375ddeaff61a5bd73f9aa57fe6d/promotion-gate-test-summary.yaml
 operatorImage: quay.io/rhoai/rhoai-fbc-fragment@sha256:0008bce07077032d0a5cba6188c073ecd969a375ddeaff61a5bd73f9aa57fe6d
+orgPulseLinks:
+- label: Pod logs
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/26/rhods-logs-2026-11-27-0218.log.gz
+- label: BVT results
+  href: https://us-east-1.console.aws.amazon.com/s3/object/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports/ci-artifacts/devops/rhoai-nightly-bvt/26/promotion-gate-bvt-26.tar.gz
+s3ArtifactsFolderConsoleUrl: https://us-east-1.console.aws.amazon.com/s3/buckets/opensearch-jenkins-dev-966199772278?region=us-east-1&prefix=jenkins-test-reports%2Fci-artifacts%2Fdevops%2Frhoai-nightly-bvt%2F26%2F
 cluster-health:
   status: failed
   passed: 0
